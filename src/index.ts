@@ -56,6 +56,9 @@ let crewmateColor =`
     <option value="Custom" label="Custom Paintjob (+$8)"></option>
     <option value="Unpainted" label="Unpainted"></option>
   </select>
+<br><br>
+<input onClick="customPaint()" id="paint button" type="checkbox"> Custom Paintjob? (+8$)
+<input type="text" id= "desc paint" placeholder="Describe Custom Paintjob Here" size="30">
 </span>
 `;
 

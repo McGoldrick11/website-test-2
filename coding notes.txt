@@ -1,7 +1,10 @@
 
 to do: 
 refactor functions in to one that i pass in parameters? 
-makle custom paintjob a ticker below select list +8 for full +5 for mini. group all in one span?
+makle custom paintjob a ticker below select list +8 for full +5 for mini. 
+store last clicked button so removal can accurately determine price
+---------
+group all questions/ elements related to a product in one span so you can add and delete products easily
 ------------
 document.getElementById("mainForm").children
 -------------
