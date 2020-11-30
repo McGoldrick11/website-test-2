@@ -3,18 +3,6 @@
 // You don't need this now
 import './index.scss';
 
-/*
-let i: number = 0;
-setInterval(() => {
-  i++;
-
-  document.getElementById("mainForm").innerHTML = `Seconds since load ${i}`;
-  if (i%2==0){
-  document.getElementById("mainForm").innerHTML = questions;
-  }
-  //throw new Error("Some error");
-}, 1000);
-*/
 
 let questions = `
 <ul>
@@ -50,30 +38,63 @@ let questions = `
   <ul>
   <li>
   <p>Which Hat Would You Like? (please type a description)</p>
-  <input type="text" id="hat_type" name="hat_type">
+  <input type="text" id="hat_type" name="hat_type"> 
   </li>
   </ul>
 
   <p></p>
-  <li class = "button">
-      <button type="button">Submit Order</button>
-      <!--Change type to Submit when you actually have a place for that button to take you-->
-  </li>
-</ul>
+
+</ul> `;
+
+let crewmateColor =
+`<span> <!--main color selector-->
+  <p>What Color Would You like Your Crewmate to be?</p>   
+  <input list ="colors1">            
+  <datalist id="colors1">
+      <option value="Red ($10)">
+      <option value="Blue ($10)">
+      <option value="Green ($10)">
+      <option value="Custom Paintjob ($18)">
+      <option value="Unpainted ($10)">
+  <br>
+  </span>`;
+
+let cmHat = `
+<p>Which Hat Would You Like? (please type a description)</p>
+<input type="text" id="hat_type" name="hat_type"> 
 `;
 
-//document.getElementById("mainForm").innerHTML = questions;
+let cmMini = `
+<p>What Color Would You like Your Mini Crewmate to be?</p>   
+  <input list ="colors1">            
+  <datalist id="colors1">
+      <option value="Red ($10)">
+      <option value="Blue ($10)">
+      <option value="Green ($10)">
+      <option value="Custom Paintjob ($18)">
+      <option value="Unpainted ($10)">
+`;
 
 console.log("console test");
 
 window.onload = document.onload = () => { //loads in 1 set of questions when the page first loads automatically
   console.log('Logged on document ready');
-  document.getElementById("mainForm").innerHTML += questions;   
+  document.getElementById("mainForm").innerHTML += crewmateColor;   
  }
 
 window.addCrewmate = function addCrewmate()  { //adds a new set of questions when the button is pressed
   console.log("run addCrewmate"); 
-  document.getElementById("mainForm").innerHTML += questions;
+  document.getElementById("mainForm").innerHTML += crewmateColor;
+};
+
+window.addHat = function addHat() {
+  console.log("adding hat");
+  document.getElementById("mainForm").innerHTML += cmHat;
+};
+
+window.addMini = function addMini() {
+  console.log("adding mini");
+  document.getElementById("mainForm").innerHTML += cmMini;
 };
 
 window.buttonTest = function buttonTest() {

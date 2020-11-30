@@ -15,16 +15,34 @@
 
   <body>
   <h1>Matt's Custom Crewmates</h1>
-  <p id="mainForm">Customize Your Crewmate Below!</p>
-
-  <button onClick="addCrewmate()">
+  <form id="mainForm" action="/end destination" method="post">Customize Your Crewmate Below!
+   <span class = "button"> <!--this is the submit button. it eventually will be moved to the bottom of the form-->
+          <button type="button">Submit Order</button>
+          <!--Change type to Submit when you actually have a place for that button to take you-->
+      <span>
+    <br>
+    <br>
+    
+    <button onClick="addCrewmate()">
     Add Crewmate
     </button>
-  
-  <button onClick="buttonTest()">
-    Button test 
-    </button>
-  <p id="yoink">testtt</p>
 
+    <button onClick="addHat()">
+    Add Hat 
+    </button>
+
+    <button onClick="addMini()">
+    Add Mini Crewmate
+    </button>
+
+     <!--here is where we add in our order items-->
+
+     
+
+
+
+  </form>
+
+  
   </body>
 </html>

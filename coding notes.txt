@@ -1,8 +1,8 @@
 
 to do: 
 add and remove buttons for each piece (crewmate, hat, mini, custom paintjob)
-reformat mainForm into an actual form
--
+reformat mainForm into an actual form-done
+'questions' is old, create new strings for each "question"
 -------------
 after cloning the code, run npm install (if its the first time) 
 then npm start anytime you want to "launch" the website on your local machine

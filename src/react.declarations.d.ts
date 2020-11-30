@@ -7,4 +7,6 @@ declare module '*.scss';
 interface Window {
     buttonTest: () => void,
     addCrewmate: ()=> void,
+    addHat: () => void,
+    addMini: () =>void,
   }
