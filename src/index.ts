@@ -66,12 +66,17 @@ let questions = `
 
 console.log("console test");
 
-function addCrewmate()  {
-  console.log("run addCrewmate");
-  document.getElementById("mainForm").innerHTML = questions;
+window.onload = document.onload = () => { //loads in 1 set of questions when the page first loads automatically
+  console.log('Logged on document ready');
+  document.getElementById("mainForm").innerHTML += questions;   
+ }
+
+window.addCrewmate = function addCrewmate()  { //adds a new set of questions when the button is pressed
+  console.log("run addCrewmate"); 
+  document.getElementById("mainForm").innerHTML += questions;
 };
 
-function buttonTest()  {
+window.buttonTest = function buttonTest() {
   console.log("run buttonTest");
   document.getElementById("yoink").innerHTML = 'it worked';
 };

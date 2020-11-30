@@ -1,0 +1,34 @@
+
+to do: 
+add and remove buttons for each piece (crewmate, hat, mini, custom paintjob)
+reformat mainForm into an actual form
+-
+-------------
+after cloning the code, run npm install (if its the first time) 
+then npm start anytime you want to "launch" the website on your local machine
+-------------------
+since the functions in index.ts are not global to be accessed by the html file, you must open "react.declarations.d.ts"
+ and interface 'Window' to declare the functions as void, then redefine them in terms of window in index.ts
+
+index.ts: 
+window.buttonTest = function buttonTest() {
+  console.log("run buttonTest");
+  document.getElementById("yoink").innerHTML = 'it worked';
+};
+
+react.declarations.d.ts:
+interface Window {
+    buttonTest: () => void,
+  }
+
+-----------------
+build your list of questions in html, then copy it (tags and all) to your TS file and define it as a string. 
+that way you can append/remove chunks of html code easily
+-------------
+load in a set of questions on start automatically
+
+window.onload = document.onload = () => {
+ console.log('Logged on document ready');   
+}
+--------
+
