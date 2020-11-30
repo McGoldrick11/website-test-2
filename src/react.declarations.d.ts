@@ -9,4 +9,6 @@ interface Window {
     addCrewmate: ()=> void,
     addHat: () => void,
     addMini: () =>void,
+    addElement: () => void,
+    rmItem: () => void,
   }

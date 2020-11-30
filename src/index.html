@@ -13,36 +13,36 @@
     </style>
   </head>
 
-  <body>
+<body>
   <h1>Matt's Custom Crewmates</h1>
-  <form id="mainForm" action="/end destination" method="post">Customize Your Crewmate Below!
-   <span class = "button"> <!--this is the submit button. it eventually will be moved to the bottom of the form-->
+
+  <button onClick="addCrewmate()" id="Crewmate button">
+    Add Crewmate (+$10)
+    </button>
+
+  <button onClick="addHat()" id="hat button">
+  Add Hat (+$5)
+  </button>
+
+  <button onClick="addMini()" id="Mini Button">
+  Add Mini Crewmate (+$5)
+  </button>
+
+  <button onClick="rmItem()" type="button" id="remove button">
+  Remove Last Item 
+  </button>
+  <br>
+  <br>
+  <form id="mainForm" action="/end destination" method="post"><b>Customize Your Crewmate Below! When finished: </b>
+   <span class = "button" id="submitButton"> <!--this is the submit button. it eventually will be moved to the bottom of the form-->
           <button type="button">Submit Order</button>
           <!--Change type to Submit when you actually have a place for that button to take you-->
-      <span>
-    <br>
-    <br>
-    
-    <button onClick="addCrewmate()">
-    Add Crewmate
-    </button>
-
-    <button onClick="addHat()">
-    Add Hat 
-    </button>
-
-    <button onClick="addMini()">
-    Add Mini Crewmate
-    </button>
+      </span>
 
      <!--here is where we add in our order items-->
-
-     
-
-
-
   </form>
 
-  
+<p>Subtotal: $10</p> <!--starting at 10 bc thats what default load is-->
+
   </body>
 </html>

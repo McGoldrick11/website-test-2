@@ -1,8 +1,9 @@
 
 to do: 
-add and remove buttons for each piece (crewmate, hat, mini, custom paintjob)
-reformat mainForm into an actual form-done
-'questions' is old, create new strings for each "question"
+refactor functions in to one that i pass in parameters? 
+makle custom paintjob a ticker below select list +8 for full +5 for mini. group all in one span?
+------------
+document.getElementById("mainForm").children
 -------------
 after cloning the code, run npm install (if its the first time) 
 then npm start anytime you want to "launch" the website on your local machine
@@ -31,4 +32,5 @@ window.onload = document.onload = () => {
  console.log('Logged on document ready');   
 }
 --------
+
 
