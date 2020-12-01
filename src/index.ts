@@ -100,7 +100,7 @@ window.addCrewmate = function addCrewmate()  { //adds a new set of questions whe
   document.getElementById("mainForm").innerHTML += crewmateColor;
   subtotal += 10;
   prod.push("crewmate");
-  document.getElementById("subtotalCounter").innerHTML = subtotal.toString();
+  window.updateSubtotal();
 };
 
 window.addHat = function addHat() {
@@ -108,7 +108,7 @@ window.addHat = function addHat() {
   document.getElementById("mainForm").innerHTML += cmHat;
   subtotal += 5;
   prod.push("hat");
-  document.getElementById("subtotalCounter").innerHTML = subtotal.toString();
+  window.updateSubtotal();
 };
 
 window.addMini = function addMini() {
@@ -116,7 +116,7 @@ window.addMini = function addMini() {
   document.getElementById("mainForm").innerHTML += cmMini;
   subtotal += 5;
   prod.push("mini");
-  document.getElementById("subtotalCounter").innerHTML = subtotal.toString();
+  window.updateSubtotal();
 };
 
 window.updateSubtotal = function updateSubtotal(){
@@ -146,7 +146,9 @@ window.rmItem = function rmItem()  { //adds a new set of questions when the butt
     }
     prod.length = prod.length-1; //trim off the last thing in array since that element is being removed
     console.log(prod);
-    document.getElementById("subtotalCounter").innerHTML = subtotal.toString(); //after the switch case updates subtotal, 
+    window.updateSubtotal();
+    //document.getElementById("subtotalCounter").innerHTML = subtotal.toString();
+    //after the switch case updates subtotal, 
     //update html with new subtotal
   }
 };
