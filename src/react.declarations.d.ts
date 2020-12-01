@@ -11,4 +11,5 @@ interface Window {
     addMini: () =>void,
     addElement: () => void,
     rmItem: () => void,
+    updateSubtotal: () => void,
   }
